@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Chapters
-author: Sheldon Pollock
-editor: Alex Gil
+author: Allison Busch
+editor: Alex Gil and Manan Ahmed
 ---
 
 {% bibliography --file chapters %}
