@@ -1,0 +1,36 @@
+---
+sitemap: false
+---
+
+/*
+* Common Variables
+*
+* Feel free to change!
+*
+*/
+
+/* FONTS */
+
+$main-font: "Garamond Pro", Garamond, serif;
+$heading-font: "Trajan Pro", "Trajan", serif;
+$regular-font-size: 20px;
+
+/* 
+* COLOR.
+* 
+* Make sure to leave color-scheme in config file empty for granular control
+* 
+*/
+
+$text-color: #454545;
+$heading-color: #404040;
+$link-color: #003399;
+
+
+@import "ed";
+@import "syntax";
+
+
+
+
+

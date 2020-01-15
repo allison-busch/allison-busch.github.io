@@ -1,0 +1,43 @@
+---
+layout: default
+title: "Home"
+---
+
+<p>Welcome to the complete bibliographic index and digital repository for Allison Busch.</p>
+
+<hr>
+
+<h2>Works by Category</h2>
+<ul class="texts">
+{% for item in site.texts %}
+  <li class="text-title">
+    <a href="{{ site.baseurl }}{{ item.url }}">
+      {{ item.title }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
+<hr>
+
+<h2>About Allison Busch</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod erat ullamcorper erat luctus, sed viverra nunc dignissim. Nullam sodales nisi ligula, at ultrices erat pharetra et. Aenean imperdiet gravida ex at porttitor. Donec eget nisi justo. Mauris pulvinar eleifend finibus. Donec scelerisque leo ex. Duis nunc sapien, rhoncus nec feugiat ut, suscipit a orci. Sed dui ex, molestie vitae metus a, rhoncus hendrerit leo. Etiam malesuada nibh turpis, quis vulputate dolor tempor id. Nulla facilisi. Fusce ac tellus at erat elementum cursus sit amet et nulla. Curabitur malesuada non sem non finibus. Cras in pharetra nibh. Quisque venenatis, dui sit amet imperdiet porta, odio ipsum gravida purus, et eleifend sem augue vitae justo. </p>
+
+
+
+
+
+<hr>
+<div class="image">
+<img src="/assets/pollock.jpg" alt="A picture of Sheldon Pollock sitting on a desk." width="100%">
+<span class="caption">Credit: New York Times</span>
+</div>
+<hr>
+
+<p>The site is built according to minimal computing standards to make it durable and broadly accessible. You can also download the complete bibliography as <a href="{{ site.baseurl }}/archive/complete.bib" target="_blank">a bibTex file</a>, or browse as <a href="https://www.zotero.org/elotroalex/items/collectionKey/FXCKMBBN">a Zotero collection</a>.</p>
+
+
+
+
+

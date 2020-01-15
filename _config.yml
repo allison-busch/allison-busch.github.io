@@ -1,0 +1,89 @@
+# Built with Jekyll 3.2.0
+
+# Setup
+
+title: 'Sheldon I. Pollock'
+tagline: 'a complete bibliography and repository'
+description: "A complete bibliography and repository of Sheldon I. Pollock's scholarly work."
+url: 'http://elotroalex.github.io'
+baseurl: ''
+
+# About/contact
+author:
+  name:              Alex Gil
+  url:               https://twitter.com/elotroalex
+  email:             colibri.alex@gmail.com
+
+# Permalinks
+
+# Color scheme. Options: red, orange, magenta, cyan, blue, brown
+color-scheme: 
+
+permalink: pretty
+permalink: /:title/
+
+# Set encoding to UTF-8
+encoding: utf-8
+
+# Collections for texts
+collections:
+  texts:
+    output: true
+
+# Markdown specs
+markdown: kramdown
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Exclusions from the final site
+exclude:
+  - optional
+  - vendor
+
+# Theme
+theme: "ed."
+
+# Gems
+plugins: ['jekyll/scholar']
+
+# Scholar
+scholar:
+  style: chicago-fullnote-bibliography
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: bibliography
+  relative: "/ed/bibliography.html"
+
+  # bibtex_filters: markdown
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: true
+  allow_locale_overrides: true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  repository: archive
+
+  query: "@*"
+
+
+
