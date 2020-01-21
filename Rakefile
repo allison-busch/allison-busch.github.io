@@ -52,7 +52,7 @@ namespace :ed do
       system "git remote add origin #{origin}"
 
       # Push the files to the gh-pages branch, forcing an overwrite.
-      system "git push origin master:refs/heads/gh-pages --force"
+      system "git push origin master:refs/heads/master --force"
     end
 
     # Done.
